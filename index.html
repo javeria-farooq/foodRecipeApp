@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Recipe App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header -->
+
+    <header>
+        <nav>
+            <h1 class="logo">FoodIe <span><i class="fa-solid fa-utensils"></i></span></h1>
+            <div class="search-container">
+                <div class="search-box">
+                    <input autofocus required class="searchInput" type="text" placeholder="Search Your Dish...">
+                    <button class="searchBtn">Search</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- content section -->
+
+    <main id="dishes">
+        <section>
+            <div class="dish-card">
+                <div class="img-container">
+                    <img src="./img/broast.png" alt="">
+                </div>
+                <h3 class="dish-name">Broast</h3>
+                <button class="view-recipe">View Recipe</button>
+            </div>
+
+            <div class="dish-card">
+                <div class="img-container">
+                    <img src="./img/tikka.png" alt="">
+                </div>
+                <h3 class="dish-name">Tikka</h3>
+                <button class="view-recipe">View Recipe</button>
+            </div>
+
+            <div class="dish-card">
+                <div class="img-container">
+                    <img src="./img/zinger.png" alt="">
+                </div>
+                <h3 class="dish-name">Zinger burger</h3>
+                <button class="view-recipe">View Recipe</button>
+            </div>
+
+            <div class="dish-card">
+                <div class="img-container">
+                    <img src="./img/sandwich.png" alt="">
+                </div>
+                <h3 class="dish-name">Sandwich</h3>
+                <button class="view-recipe">View Recipe</button>
+            </div>
+
+            <div class="dish-card">
+                <div class="img-container">
+                    <img src="./img/cake.png" alt="">
+                </div>
+                <h3 class="dish-name">Chocolate cake</h3>
+                <button class="view-recipe">View Recipe</button>
+            </div>
+
+            <div class="dish-card">
+                <div class="img-container">
+                    <img src="./img/custard.png" alt="">
+                </div>
+                <h3 class="dish-name">Custard</h3>
+                <button class="view-recipe">View Recipe</button>
+            </div>
+
+            <div class="dish-card">
+                <div class="img-container">
+                    <img src="./img/mousse.png" alt="">
+                </div>
+                <h3 class="dish-name">Mousse</h3>
+                <button class="view-recipe">View Recipe</button>
+            </div>
+
+            <div class="dish-card">
+                <div class="img-container">
+                    <img src="./img/iceCream.png" alt="">
+                </div>
+                <h3 class="dish-name">Ice cream</h3>
+                <button class="view-recipe">View Recipe</button>
+            </div>
+
+            <div class="dish-card">
+                <div class="img-container">
+                    <img src="./img/Cappuccino.png" alt="">
+                </div>
+                <h3 class="dish-name">Cappuccino</h3>
+                <button class="view-recipe">View Recipe</button>
+            </div>
+
+            <div class="dish-card">
+                <div class="img-container">
+                    <img src="./img/chocolateMilkshake.png" alt="">
+                </div>
+                <h3 class="dish-name">Chocolate milk shake</h3>
+                <button class="view-recipe">View Recipe</button>
+            </div>
+
+            <div class="dish-card">
+                <div class="img-container">
+                    <img src="./img/hotChocolate.png" alt="">
+                </div>
+                <h3 class="dish-name">Hot chocolate</h3>
+                <button class="view-recipe">View Recipe</button>
+            </div>
+
+            <div class="dish-card">
+                <div class="img-container">
+                    <img src="./img/strawberryMilkshake.png" alt="">
+                </div>
+                <h3 class="dish-name">Strawberry milk shake</h3>
+                <button class="view-recipe">View Recipe</button>
+            </div>
+
+           <!-- recipe popup -->
+
+            <div class="recipeDetails hide">
+                <button class="recipeCloseBtn" type="button">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <div class="recipeDetailsContent">
+                    <h2 class="recipeName"></h2>
+                    <div class="instructions">
+                        <h3>Steps:</h3>
+                        <div class="recipeInstructions"><ul></ul></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
